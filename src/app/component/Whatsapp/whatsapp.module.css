@@ -1,0 +1,13 @@
+.whatsapp{
+    position: fixed;
+    bottom: calc((100vw / 1920)*50);
+    right: calc((100vw / 1920)*50);
+    z-index:9999;
+}
+
+@media screen and (max-width: 1100px) {
+    .whatsapp {
+        bottom: calc((100vw / 393)*50);
+        right: calc((100vw / 393)*50);
+    }
+}
