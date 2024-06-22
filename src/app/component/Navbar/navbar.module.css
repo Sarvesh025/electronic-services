@@ -2,8 +2,12 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    background: blue;
+    background: transparent;
     height: 8vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
 
 .logo{
@@ -16,11 +20,14 @@ color: aliceblue;
     grid-template-columns: auto auto auto auto auto;
     align-items: center;
     justify-content: center;
-    gap: calc((100vw/1920)*30);
+    gap: calc((100vw/1920)*60);
     font-size: calc((100vw/1920)*24);
     color: white;
     height: inherit;
+    justify-self: end;
+    padding-right: calc((100vw/1920)*100);
 }
+
 
 @media screen and (max-width: 1100px) {
     .links{
