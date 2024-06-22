@@ -1,0 +1,80 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,42,91,1) 35%, rgba(0,212,255,1) 100%);
+    padding: calc((100vw/1920)*80) 0;
+}
+
+.form form{
+    background-color: #ffffff6b;
+    backdrop-filter: blur(20px);
+    width: calc((100vw / 1920)* 500);
+    padding: calc((100vw / 1920)* 40) calc((100vw / 1920)* 30);
+    border-radius: calc((100vw / 1920)* 20);
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: calc((100vw / 1920)* 20);
+    box-shadow: 0 0 3px 0 black;
+}
+
+.form form input{
+    padding: calc((100vw / 1920)* 15);
+    outline: none;
+    font-size: calc((100vw/1920)*20);
+    border-radius: calc((100vw / 1920)* 7);
+    border: none;
+}
+
+.form form select{
+    padding: 10px;
+}
+
+.form form textarea{
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
+
+.form form button{
+    font-size: calc((100vw/1920)*20);
+    padding: calc((100vw / 1920)* 15);
+    border-radius: calc((100vw / 1920)* 30);
+    border: none;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 42, 91, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+    .form{
+        padding: calc((100vw/393)*80) 0;
+    }
+
+    .form form{
+        width: calc((100vw / 393)* 277);
+        padding: calc((100vw / 393)* 40) calc((100vw / 393)* 30);
+        border-radius: calc((100vw / 393)* 20);
+        gap: calc((100vw / 393)* 20);
+    }
+    
+    .form form input{
+        padding: calc((100vw / 393)* 15);
+        font-size: calc((100vw/ 393)*20);
+        border-radius: calc((100vw / 393)* 7);
+    }
+    
+    .form form select{
+        padding: calc((100vw / 393)* 15);
+    }
+    
+    .form form textarea{
+        padding: calc((100vw / 393)* 15);
+    }
+    
+    .form form button{
+        font-size: calc((100vw/ 393)*20);
+        padding: calc((100vw / 393)* 15);
+        border-radius: calc((100vw / 393)* 30);
+    }
+}
