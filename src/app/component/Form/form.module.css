@@ -24,10 +24,13 @@
     font-size: calc((100vw/1920)*20);
     border-radius: calc((100vw / 1920)* 7);
     border: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .form form select{
-    padding: 10px;
+    padding: calc((100vw/1920)*10);
+    font-size: calc((100vw/1920)*20);
 }
 
 .form form textarea{
@@ -66,10 +69,13 @@
     
     .form form select{
         padding: calc((100vw / 393)* 15);
+        font-size: calc((100vw/ 393)*20);
     }
     
     .form form textarea{
         padding: calc((100vw / 393)* 15);
+        font-size: calc((100vw/ 393)*20);
+
     }
     
     .form form button{

@@ -103,9 +103,9 @@ export default function Form() {
                 <option value="air-conditioner">Air Conditioner</option>
                 <option value="refrigerators">Refrigerators</option>
                 <option value="microwave">Microwave</option>
-                <option value="washing-machine">Washing machine</option>
+                <option value="washing-machine">Washing Machine</option>
             </select>
-            <textarea name="problem" value={inputs.problem} onChange={handelInputs} cols="20" rows="10" placeholder='Write your problems...' required/>
+            <textarea name="problem" value={inputs.problem} onChange={handelInputs} cols="20" rows="10" placeholder='Write your problem here...' required/>
             <button type="submit">ENQUIRE NOW</button>
         </form>
     </div>
