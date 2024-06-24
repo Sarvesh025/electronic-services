@@ -6,6 +6,7 @@ import Whatsapp from '../../component/Whatsapp/page'
 import Form from '@/app/component/Form/page'
 import Contact from '../contact/page'
 import CustomCarousel from '@/app/component/CustomCarousel/CustomCarousel'
+import Brands from '@/app/component/Marquee/page'
 
 export default function Home() {
 
@@ -35,6 +36,7 @@ export default function Home() {
             <Services scrollToForm={handleClick} onData={handleDataFromChild} thumbnail='/repair-microwave.jpg' title='Microwave' description='sdjbnsdbdsyhvbyvbyuvbyuvbyvbuyvbsdyuhvbvysdbvybvwvbvywerbvyuhrbvyrhvbsdyhuvbsdhvsduyv uyhvrv wdvberv yvrvyerbvyre vyer vyer gre vyer gryv ereryg wev rey v eryb erv erg werg eruig erugrge rlg eragher ger gergr' />
             <Form data={dataFromChild} ref={enquiryREF} />
             <Whatsapp />
+
             {/* <Contact /> */}
         </div>
     )
