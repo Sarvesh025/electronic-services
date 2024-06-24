@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './navbar.module.css'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import Button from '../Button/page';
 
 export default function Navbar() {
   const [scrollhight, setScrollhight] = useState(0);
@@ -28,8 +29,7 @@ export default function Navbar() {
         <h6>Home</h6>
         <h6><Link href='/pages/about'>About us</Link></h6>
         <h6><Link href='/pages/contact'>Contact us</Link></h6>
-        <h6>Services</h6>
-        <h6>Enquiry</h6>
+        <Button title="Enquiry"/>
       </div>
     </div>
   )

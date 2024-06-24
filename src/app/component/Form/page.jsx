@@ -1,9 +1,19 @@
 'use client';
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import styles from './form.module.css';
 import { emailFormat } from '@/app/util';
 import emailjs from '@emailjs/browser';
-export default function Form() {
+import { useRouter } from 'next/navigation';
+
+export default function Form({data}) {
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if(data){
+      setInputs({...inputs, appliances: data});
+    }
+  }, [data]);
 
   const [inputs, setInputs] = useState({
     name: '',
@@ -36,15 +46,12 @@ export default function Form() {
     }
     else if(e.target.name === 'address'){
       setInputs({...inputs, [e.target.name]: e.target.value});
-
     }
     else if(e.target.name === 'appliances'){
       setInputs({...inputs, [e.target.name]: e.target.value});
-
     }
     else if(e.target.name === 'problem'){
       setInputs({...inputs, [e.target.name]: e.target.value});
-
     }
   };
 
@@ -98,7 +105,7 @@ export default function Form() {
             <input type="text" name='name' value={inputs.name} onChange={handelInputs} placeholder='Enter your name' required/>
             <input type="email" name='email' value={inputs.email} onChange={handelInputs} placeholder='Enter your email' style={inputs.email !== '' ? (verify.email ? {outline:'green solid 2px'} : {outline:'red solid 2px'}):{}} required/>
             <input type="text" name='address' value={inputs.address} onChange={handelInputs} placeholder='Enter your address' required/>
-            <select name="appliances" ref={appliances} onChange={handelInputs} required>
+            <select name="appliances" value={inputs.appliances} ref={appliances} onChange={handelInputs} required>
                 <option value="select-appliances">Select your problem</option>
                 <option value="air-conditioner">Air Conditioner</option>
                 <option value="refrigerators">Refrigerators</option>
