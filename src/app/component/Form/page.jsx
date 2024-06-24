@@ -116,5 +116,5 @@ const Form = forwardRef(({ data }, ref) => {
     </div>
   )
 });
-
+Form.displayName = 'Form';
 export default Form;
