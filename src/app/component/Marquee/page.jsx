@@ -5,8 +5,8 @@ export default function Brands() {
     const arr = ["/carrier.png", "/daikin.png ", "/samsung.png ", "/whirlpool.png ", "/lg.png"];
   return (
     <Marquee speed={100}>
-    {arr.map((e) => (
-      <img src={e} alt="brand logo" className={styles.image} />
+    {arr.map((e, i) => (
+      <img src={e} key={i} alt="brand logo" className={styles.image} />
     ))}
   </Marquee>
   )
