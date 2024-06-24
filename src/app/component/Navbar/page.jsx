@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Button from '../Button/page';
 
-export default function Navbar() {
+export default function Navbar({scrollToForm}) {
   const [scrollhight, setScrollhight] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -26,10 +26,10 @@ export default function Navbar() {
     }}>
       <div className={styles.logo}>Logo</div>
       <div className={styles.links}>
-        <h6>Home</h6>
+        <h6><Link href="#Form">Home</Link></h6>
         <h6><Link href='/pages/about'>About us</Link></h6>
         <h6><Link href='/pages/contact'>Contact us</Link></h6>
-        <Button title="Enquiry"/>
+        <Button onClick={scrollToForm} title="Enquiry"/>
       </div>
     </div>
   )

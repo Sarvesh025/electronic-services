@@ -23,7 +23,7 @@ const responsive = {
     }
 };
 
-export default function CustomCarousel() {
+export default function CustomCarousel({handleClick}) {
     return (<div className={styles.container}>
         <Carousel
             responsive={responsive}
