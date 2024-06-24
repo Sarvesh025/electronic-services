@@ -34,6 +34,7 @@ export default function Home() {
             <Services scrollToForm={handleClick} onData={handleDataFromChild} thumbnail='/repairing-refrigerator.jpg' title='Refrigerator' description='sdjbnsdbdsyhvbyvbyuvbyuvbyvbuyvbsdyuhvbvysdbvybvwvbvywerbvyuhrbvyrhvbsdyhuvbsdhvsduyv uyhvrv wdvberv yvrvyerbvyre vyer vyer gre vyer gryv ereryg wev rey v eryb erv erg werg eruig erugrge rlg eragher ger gergr' />
             <Services scrollToForm={handleClick} onData={handleDataFromChild} thumbnail='/repairing-washing-machine.jpg' title='Washing Machine' description='sdjbnsdbdsyhvbyvbyuvbyuvbyvbuyvbsdyuhvbvysdbvybvwvbvywerbvyuhrbvyrhvbsdyhuvbsdhvsduyv uyhvrv wdvberv yvrvyerbvyre vyer vyer gre vyer gryv ereryg wev rey v eryb erv erg werg eruig erugrge rlg eragher ger gergr' />
             <Services scrollToForm={handleClick} onData={handleDataFromChild} thumbnail='/repair-microwave.jpg' title='Microwave' description='sdjbnsdbdsyhvbyvbyuvbyuvbyvbuyvbsdyuhvbvysdbvybvwvbvywerbvyuhrbvyrhvbsdyhuvbsdhvsduyv uyhvrv wdvberv yvrvyerbvyre vyer vyer gre vyer gryv ereryg wev rey v eryb erv erg werg eruig erugrge rlg eragher ger gergr' />
+            <Brands/>
             <Form data={dataFromChild} ref={enquiryREF} />
             <Whatsapp />
 
