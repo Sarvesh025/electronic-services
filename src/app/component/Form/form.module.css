@@ -55,26 +55,26 @@
     }
 
     .form form{
-        width: calc((100vw / 393)* 277);
-        padding: calc((100vw / 393)* 40) calc((100vw / 393)* 30);
+        width: calc((100vw / 393)* 315);
+        padding: calc((100vw / 393)* 25) calc((100vw / 393)* 20);
         border-radius: calc((100vw / 393)* 20);
-        gap: calc((100vw / 393)* 20);
+        gap: calc((100vw / 393)* 15);
     }
     
     .form form input{
         padding: calc((100vw / 393)* 15);
-        font-size: calc((100vw/ 393)*20);
+        font-size: calc((100vw/ 393)*18);
         border-radius: calc((100vw / 393)* 7);
     }
     
     .form form select{
         padding: calc((100vw / 393)* 15);
-        font-size: calc((100vw/ 393)*20);
+        font-size: calc((100vw/ 393)*18);
     }
     
     .form form textarea{
         padding: calc((100vw / 393)* 15);
-        font-size: calc((100vw/ 393)*20);
+        font-size: calc((100vw/ 393)*16);
 
     }
     
