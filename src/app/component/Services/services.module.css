@@ -5,6 +5,7 @@
     padding: calc((100vw / 1920)* 50);
     align-items: center;
     gap: calc((100vw / 1920)* 50);
+    width: fit-content;
 }
 
 .services:nth-child(odd) {
@@ -67,17 +68,22 @@
 
 @media screen and (max-width: 1100px) {
     .services{
-        grid-template-rows: 1fr auto;
-        padding: calc((100vw / 393)* 10);
+        grid-template-rows: auto auto;
+        padding: calc((100vw / 393)* 5);
         gap: calc((100vw / 393)* 20);
-        margin: calc((100vw / 393)* 20);
         box-shadow: 0 0 5px 0 black;
-        border-radius: calc((100vw / 393)* 10);
+        border-radius: calc((100vw / 393)* 15);
+        width: calc((100vw / 393)* 375);
+        margin: calc((100vw / 393)* 25) auto;
+    }
+
+    .services img{
+        border-radius: calc((100vw / 393)* 10) calc((100vw / 393)* 10) 0  0;
     }
    
     .services:nth-child(odd) {
         grid-template-columns: auto;
-    
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,42,91,1) 35%, rgba(0,212,255,1) 100%);
         >.thumbnail {
             grid-area: 1/1;
         }
@@ -93,7 +99,7 @@
     
     .services:nth-child(even) {
         grid-template-columns: auto;
-    
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,42,91,1) 35%, rgba(0,212,255,1) 100%);
         >.thumbnail {
             grid-area: 1/1;
         }
@@ -109,14 +115,16 @@
 
     .serviceDetails{
         gap:  calc((100vw / 393)*10);
+        padding: 0 calc((100vw / 393)*20);
     }
 
     .serviceDetails h1{
         font-size: calc((100vw / 393)*30);
+        text-align: center;
     }
     
     .serviceDetails p{
-        font-size: calc((100vw / 393)*7);
+        font-size: calc((100vw / 393)*12);
         text-align: center;
     }
     
