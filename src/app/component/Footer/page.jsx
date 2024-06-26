@@ -17,7 +17,7 @@ export default function Footer() {
             <h2>STAR REPAIRING CENTER</h2>
             <p>In our services, we prioritize customer satisfaction and strive to provide the best possible service to our customers. If you're in need of appliance repair services, don't hesitate to contact us. We're here to help you get your appliances up and running as soon as possible.</p>
             <div className={styles.links}>
-                <h2>LINKS : -</h2>
+                <h2>LINKS </h2>
                 <ul className={styles.link_info}>
                     <li>Home</li>
                     <li>About us</li>
