@@ -1,0 +1,120 @@
+.footer {
+    padding: 0 calc((100vw/1920)*20);
+    display: grid;
+    grid-template-rows: auto auto;
+    gap:  calc((100vw/1920)*30);
+    background: black;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.contact{
+    background: white;
+    color: black;
+    height: calc((100vw / 1920)* 300);
+    width: calc((100vw / 1920)* 500);
+    padding: calc((100vw/1920)*10);
+    border-radius: 0 0  calc((100vw/1920)*50) calc((100vw/1920)*50);
+    font-size: calc((100vw/1920)*23);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: calc((100vw/1920)*20);
+    list-style: none;
+    padding: calc((100vw/1920)*20);
+}
+
+.intro{
+    padding: calc((100vw/1920)*20) calc((100vw/1920)*35);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: calc((100vw/1920)*15);
+    color: white;
+    font-size: calc((100vw/1920)*22);
+}
+
+.links{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: calc((100vw/1920)*15);
+    padding: calc((100vw/1920)*15);
+    color: white;
+    font-size: calc((100vw/1920)*20);
+}
+
+.link_info{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-decoration: underline;
+}
+
+.copyright{
+    padding: calc((100vw/1920)*15);
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: calc((100vw/1920)*50) calc((100vw/1920)*50) 0 0;
+    font-size: calc((100vw/1920)*20);
+}
+
+@media screen and (max-width: 1100px) {
+    .footer{
+        padding: 0 calc((100vw/393)*15);
+        gap: calc((100vw/393)*15);
+    }
+    .top{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: calc((100vw/393)*10);
+    }
+
+    .info{
+        gap: calc((100vw/393)*6);
+        padding: calc((100vw/393)*10);
+    }
+
+    .contact{
+        width: calc((100vw/393)*200);
+        height: calc((100vw/393)*100);
+        padding: calc((100vw/393)*10);
+        border-radius: 0 0  calc((100vw/393)*25) calc((100vw/393)*25);
+        font-size: calc((100vw/393)*10);
+    }
+
+    .intro{
+        font-size: calc((100vw/393)*12);
+        gap: calc((100vw/393)*10);
+    }
+
+    .intro h2{
+        text-align: center;
+    }
+
+    .links{
+        font-size: calc((100vw/393)*10);
+        gap: calc((100vw/393)*10);
+        justify-items: center;
+    }
+
+    .links h2{
+        justify-self: start;
+    }
+
+    .link_info{
+        list-style: none;
+        text-align: center;
+        text-decoration: underline;
+        gap: calc((100vw/393)*20);
+    }
+
+    .copyright{
+        font-size: calc((100vw/393)*10);
+        padding: calc((100vw/393)*10);
+        border-radius: calc((100vw/393)*50) calc((100vw/393)*50) 0 0;
+    }
+}

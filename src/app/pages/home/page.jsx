@@ -7,6 +7,7 @@ import Form from '@/app/component/Form/page'
 import Contact from '../contact/page'
 import CustomCarousel from '@/app/component/CustomCarousel/CustomCarousel'
 import Brands from '@/app/component/Marquee/page'
+import Footer from '@/app/component/Footer/page'
 
 export default function Home() {
 
@@ -36,6 +37,7 @@ export default function Home() {
             <Services scrollToForm={handleClick} onData={handleDataFromChild} thumbnail='/repair-microwave.jpg' title='Microwave' description=' vyer vyer gre vyer gryv ereryg wev rey v eryb erv erg werg eruig erugrge rlg yrhvbsdyhuvbsdhvsduyv uyhvrv wdvberv yvrvyerbvyre vyer vyer gre vyer gryv ereryg wev rey v eryb erv erg werg eruig erugrge rlg eragher ger gergr' />
             <Brands/>
             <Form data={dataFromChild} ref={enquiryREF} />
+            <Footer/>
             <Whatsapp />
 
             {/* <Contact /> */}

@@ -1,5 +1,4 @@
 .services{
-    border: 1px solid;
     display: grid;
     grid-template-rows: auto;
     padding: calc((100vw / 1920)* 50);
@@ -75,6 +74,7 @@
         border-radius: calc((100vw / 393)* 15);
         width: calc((100vw / 393)* 375);
         margin: calc((100vw / 393)* 25) auto;
+        border: 1px solid;
     }
 
     .services img{
