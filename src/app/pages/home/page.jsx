@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import Navbar from '../../component/Navbar/page'
 import Services from '@/app/component/Services/page'
 import Whatsapp from '../../component/Whatsapp/page'
@@ -22,10 +22,6 @@ export default function Home() {
     const handleDataFromChild = (data) => {
         setDataFromChild(data);
     };
-
-   useEffect(() => {
-        
-   }, [])
 
     return (
         <div>

@@ -7,12 +7,17 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 9999;
 }
 
 .logo{
-padding-left: calc((100vw/1920)*50);
-color: aliceblue;
+    padding-left: calc((100vw/1920)*50);
+    color: aliceblue;
+    height: inherit;
+}
+
+.logo img{
+    height: inherit;
 }
 
 .links{

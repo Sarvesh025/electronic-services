@@ -8,14 +8,17 @@ import Button from '../Button/page';
 export default function Navbar({scrollToForm}) {
   const [scrollhight, setScrollhight] = useState(0);
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollhight(window.scrollY)
-    }
+    if(window !== 'undefined'){
 
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
+      const handleScroll = () => {
+        setScrollhight(window.scrollY)
+      }
+      
+      window.addEventListener('scroll', handleScroll)
+      
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
   }, [])
 
@@ -24,7 +27,9 @@ export default function Navbar({scrollToForm}) {
       backgroundColor:`rgb(0,0,0,${scrollhight / 1000})`,
       backdropFilter:`blur(${scrollhight / 10}px)`
     }}>
-      <div className={styles.logo}>Logo</div>
+      <div className={styles.logo}>
+        <img src="./logo.png" alt="star repairing center" />
+      </div>
       <div className={styles.links}>
         <h6><Link href="#Form">Home</Link></h6>
         <h6><Link href='/pages/about'>About us</Link></h6>
