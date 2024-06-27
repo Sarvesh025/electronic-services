@@ -33,7 +33,6 @@ export default function Navbar({scrollToForm}) {
       <div className={styles.links}>
         <h6><Link href="#Form">Home</Link></h6>
         <h6><Link href='/pages/about'>About us</Link></h6>
-        <h6><Link href='/pages/contact'>Contact us</Link></h6>
         <Button onClick={scrollToForm} title="Enquiry"/>
       </div>
     </div>

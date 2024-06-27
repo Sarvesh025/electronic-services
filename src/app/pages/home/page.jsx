@@ -4,7 +4,6 @@ import Navbar from '../../component/Navbar/page'
 import Services from '@/app/component/Services/page'
 import Whatsapp from '../../component/Whatsapp/page'
 import Form from '@/app/component/Form/page'
-import Contact from '../contact/page'
 import CustomCarousel from '@/app/component/CustomCarousel/CustomCarousel'
 import Brands from '@/app/component/Marquee/page'
 import Footer from '@/app/component/Footer/page'
@@ -35,8 +34,6 @@ export default function Home() {
             <Form data={dataFromChild} ref={enquiryREF} />
             <Footer/>
             <Whatsapp />
-
-            {/* <Contact /> */}
         </div>
     )
 }
