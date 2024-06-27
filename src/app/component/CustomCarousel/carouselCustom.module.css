@@ -1,48 +1,19 @@
-.container{
+/* .container{
 
+} */
+
+.show{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    background-position: center;
+    position: relative;
 }
 
-.showone{
-    background-image:
-    linear-gradient(to right, rgba(2,0,36,0.5),  rgba(0, 173, 247,1) ),
-    url('https://thearchitectsdiary.com/wp-content/uploads/2020/11/ac-repair-service-.jpg');
-    width: 100vw;
-    height: 80vh;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    background-position: center;
-}
-.showtwo{
-    background-image:
-    linear-gradient(to right, rgba(2,0,36,0.5),  rgba(0, 173, 247,1) ),
-    url('https://repaircentrejum.in/wp-content/uploads/2021/01/Male-Technician-With-Screwdriver-Repairing-Refrigerator-in-Kitchen-1024x680.jpg');
-    width: 100vw;
-    height: 80vh;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    background-position: center;
-}
-.showthree{
-    background-image:
-    linear-gradient(to right, rgba(2,0,36,0.5),  rgba(0, 173, 247,1) ),
-    url('https://img77.uenicdn.com/image/upload/v1532016962/category/shutterstock_1033666522.jpg');
-    width: 100vw;
-    height: 80vh;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    background-position: center;
-}
-.showfour{
-    background-image:
-    linear-gradient(to right, rgba(2,0,36,0.5),  rgba(0, 173, 247,1) ),
-    url('https://t3.ftcdn.net/jpg/04/23/35/16/360_F_423351639_qcIVh5khAZrpTdIHakM5n8G6wtgFIA7y.jpg');
-    width: 100vw;
-    height: 80vh;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    background-position: center;
+@media screen and (max-width:768px) {
+    .show{
+        height: 50vh;
+    }
 }

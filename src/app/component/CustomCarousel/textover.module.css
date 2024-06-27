@@ -1,0 +1,82 @@
+.textOver{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    padding-left: calc((100vw / 1920)* 170);
+    inset: 0;
+}
+
+.container{
+    /* height: 200px;
+    width: 500px; */
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    gap: calc((100vw / 1920)* 20);
+    font-size: calc((100vw / 1920)* 40);
+}
+
+.container p{
+    font-size: calc((100vw / 1920)* 30);
+}
+
+.btnContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: calc((100vw / 1920)* 10);
+    align-items: center;
+}
+
+.actionBtn{
+    padding: calc((100vw / 1920)* 15) calc((100vw / 1920)* 20);
+    border-radius: calc((100vw / 1920)* 20);
+    border: 1px solid rgba(0, 212, 255, 1);
+    font-size: calc((100vw/1920)*25);
+    margin-top: calc((100vw/1920)*20);
+    cursor: pointer;
+}
+
+.actionBtn a{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: calc((100vw / 1920)* 10);
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.actionBtn:hover{
+    border: 1px solid white;
+    background-color: rgba(0, 212, 255, 1);
+}
+
+@media screen and (max-width:1100px) {
+    .textOver{
+        padding-right: calc((100vw/393)*50);
+    }
+    .container{
+        gap: calc((100vw / 393)* 7);
+        font-size: calc((100vw / 393)* 18);
+    }
+
+    .container p{
+        font-size: calc((100vw / 393)* 12);
+    }
+    
+    .btnContainer{
+        gap: calc((100vw / 393)* 10);
+    }
+    
+    .actionBtn{
+        padding: calc((100vw / 393)* 10) calc((100vw / 393)* 15);
+        border-radius: calc((100vw / 393)* 10);
+        font-size: calc((100vw / 393)*12);
+        margin-top: calc((100vw/393)*10);
+    }
+
+    .actionBtn a{
+        gap: calc((100vw / 393)* 5);
+    }
+}
