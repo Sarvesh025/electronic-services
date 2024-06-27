@@ -31,7 +31,7 @@ export default function Navbar({scrollToForm}) {
         <img src="./logo.png" alt="star repairing center" />
       </div>
       <div className={styles.links}>
-        <h6><Link href="#Form">Home</Link></h6>
+        <h6><Link href="/">Home</Link></h6>
         <h6><Link href='/pages/about'>About us</Link></h6>
         <Button onClick={scrollToForm} title="Enquiry"/>
       </div>
