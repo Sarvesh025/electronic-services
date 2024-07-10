@@ -6,16 +6,16 @@ export default function Services({ thumbnail, title, description, onData, scroll
 
   function bookService() {
     scrollToForm();
-    if (title === "Air Conditioner") {
+    if (title === "AIR CONDITIONER") {
       onData("air-conditioner");
     }
-    else if (title === "Refrigerator") {
+    else if (title === "REFRIGERATOR") {
       onData("refrigerators");
     }
-    else if (title === "Washing Machine") {
+    else if (title === "WASHING MACHINE") {
       onData("washing-machine");
     }
-    else if (title === "Microwave") {
+    else if (title === "MICROWAVE") {
       onData("microwave");
     }
   };

@@ -52,11 +52,12 @@
 }
 
 .serviceDetails h1{
-    font-size: calc((100vw / 1920)*70);
+    font-size: calc((100vw / 1920)*50);
 }
 
 .serviceDetails p{
-    font-size: calc((100vw / 1920)*18);
+    font-size: calc((100vw / 1920)*30);
+    line-height: 2;
 }
 
 .bookBtn{
@@ -125,6 +126,7 @@
     
     .serviceDetails p{
         font-size: calc((100vw / 393)*12);
+        line-height: 1.5;
         text-align: center;
     }
     

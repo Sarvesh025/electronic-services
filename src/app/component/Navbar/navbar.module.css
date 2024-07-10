@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     gap: calc((100vw/1920)*60);
-    font-size: calc((100vw/1920)*24);
+    font-size: calc((100vw/1920)*30);
     color: white;
     height: inherit;
     justify-self: end;

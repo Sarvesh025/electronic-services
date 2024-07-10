@@ -55,7 +55,7 @@ export default function About() {
         </div>
 
         <div className={styles.content}>
-          <h2>Why Choose SS Appliances?</h2>
+          <h2>Why Choose Star Repairing Center?</h2>
           <p>When it comes to choosing a service provider for your home appliance repairs, there are several reasons to choose SS Appliance Company</p>
           <ul className={styles.chooseUs}>
           {

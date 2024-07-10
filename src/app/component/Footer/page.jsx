@@ -13,7 +13,7 @@ export default function Footer() {
     },
     {
         title: 'Address :',
-        value: 'hbsbc sdv dsfve eefe fwefe'
+        value: 'West Bengal, Kestopur, 700101'
     }
     ];
 
